@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hello World!</title>
+    </head>
+    <body>
+        <ul>
+            <lh><u>User: Hint - Password</u></lh>
+            {{range .Person}}
+            <li>{{.Name}}: {{.Hint}} - {{.Password}}</li>
+            {{end}}
+        </ul>
+        <ul>
+            <lh><u>Position - Year Started - Location.</u></lh>
+            {{range .Position}}
+            <li>{{.Position}} - {{.YearStarted}} - {{.Location}}</li>
+            {{end}}
+        </ul>
+    </body>
+</html>
